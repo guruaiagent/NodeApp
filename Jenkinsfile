@@ -12,6 +12,7 @@ pipeline {
 			steps {
 				// git branch: 'main', credentialsId: 'jen-doc-git', url: 'https://github.com/iQuantC/NodeApp.git'
 				git branch: 'main', credentialsId: 'jen-doc-git', url: 'https://github.com/guruaiagent/NodeApp.git'
+				
 			}
 		}		
 		stage('Install node dependencies'){
