@@ -10,8 +10,6 @@ COPY package*.json ./
 # Install only production nodeJS dependencies in Docker Image
 RUN npm install
 
-# RUN npm install --only=production
-
 # Copy the rest of the application code into the container
 COPY . .
 
