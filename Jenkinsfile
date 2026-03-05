@@ -13,7 +13,6 @@ pipeline {
 		stage('Install node dependencies'){
 			steps {
 				sh 'npm install'
-				
 			}
 		}
 		stage('Test Code'){
