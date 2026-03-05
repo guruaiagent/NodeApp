@@ -7,11 +7,13 @@ pipeline {
 		stage('Checkout Github'){
 			steps {
 				git branch: 'main', credentialsId: 'jen-doc-git', url: 'https://github.com/guruaiagent/NodeApp.git'
+
 			}
 		}		
 		stage('Install node dependencies'){
 			steps {
 				sh 'npm install'
+				
 			}
 		}
 		stage('Test Code'){
